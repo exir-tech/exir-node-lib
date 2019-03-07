@@ -1,10 +1,10 @@
 const expect = require('chai').expect;
-const HollaEx = require('../index');
+const Exir = require('../index');
 
 require('dotenv').load();
 
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
-const client = new HollaEx({ accessToken: ACCESS_TOKEN });
+const client = new Exir({ accessToken: ACCESS_TOKEN });
 
 describe('Public functions', function() {
 	const symbolPare = 'btc-eur';

@@ -3,16 +3,16 @@ const EventEmitter = require('events');
 
 const { createRequest } = require('./utils');
 
-class HollaEx {
+class Exir {
 	constructor(
 		opts = {
-			apiURL: 'https://api.hollaex.com',
+			apiURL: 'https://api.exir.tech',
 			baseURL: '/v0',
 			accessToken: ''
 		}
 	) {
-		this._url = opts.apiURL + opts.baseURL || 'https://api.hollaex.com/v0';
-		this._wsUrl = opts.apiURL || 'https://api.hollaex.com';
+		this._url = opts.apiURL + opts.baseURL || 'https://api.exir.tech/v0';
+		this._wsUrl = opts.apiURL || 'https://api.exir.tech';
 		this._accessToken = opts.accessToken || '';
 		this._headers = {
 			'content-type': 'application/json',
@@ -241,4 +241,4 @@ class Socket extends EventEmitter {
 	}
 }
 
-module.exports = HollaEx;
+module.exports = Exir;
