@@ -1,19 +1,19 @@
 # hollaex-node-lib
 
-HollaEx crypto exchange nodejs library
+Exir crypto exchange nodejs library
 
 ## Usage
 
 ```node
-const HollaEx = require('hollaex-node-lib');
+const Exir = require('hollaex-node-lib');
 
-var client = new HollaEx();
+var client = new Exir();
 ```
 
 You can pass your Access_Token generated from the site as follows:
 
 ```node
-var client = new HollaEx({ accessToken: MY_ACCESS_TOKEN });
+var client = new Exir({ accessToken: MY_ACCESS_TOKEN });
 ```
 
 There is a list of functions you can call which will be added later and they are not at this point implemented yet.
@@ -21,7 +21,7 @@ There is a list of functions you can call which will be added later and they are
 ### getTicker
 
 ```node
-var client = new HollaEx({ accessToken: MY_ACCESS_TOKEN });
+var client = new Exir({ accessToken: MY_ACCESS_TOKEN });
 client
 	.getTicker('btc-eur')
 	.then((res) => {
@@ -268,5 +268,5 @@ node app.js
 ## Documentation
 
 For adding additional functionalities simply go to index.js and add more features.
-You can read more about api documentation at https://apidocs.hollaex.com
+You can read more about api documentation at https://apidocs.exir.io
 You should create your token on the platform in setting->api keys
