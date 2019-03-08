@@ -1,11 +1,11 @@
-# hollaex-node-lib
+# exir-node-lib
 
 Exir crypto exchange nodejs library
 
 ## Usage
 
 ```node
-const Exir = require('hollaex-node-lib');
+const Exir = require('exir-node-lib');
 
 var client = new Exir();
 ```
